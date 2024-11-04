@@ -19,6 +19,16 @@
       "id": 4,
       "task": "Call Joe",
       "complete": false
+    },
+    {
+      "id": 6,
+      "task": "Eat dinner",
+      "complete": false
+    },
+    {
+      "id": 7,
+      "task": "Play game",
+      "complete": false
     }
   ]
 }
