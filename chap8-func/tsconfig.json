@@ -1,0 +1,18 @@
+{
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    "target": "ES2022",
+    "outDir": "./build",
+    "rootDir": "./src",
+    "module": "Node16",
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "sourceMap": true,
+    "noEmitOnError": true,
+//    "declaration": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "strictNullChecks": true,
+    "noUnusedParameters": true
+  }
+}
