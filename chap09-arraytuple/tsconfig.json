@@ -1,5 +1,8 @@
 {
-  "exclude": ["node_modules"],
+  "exclude": [
+    "node_modules",
+    "./build/**/*"
+  ],
   "compilerOptions": {
     "target": "ES2022",
     "outDir": "./build",
@@ -9,7 +12,7 @@
     "strictPropertyInitialization": false,
     "sourceMap": true,
     "noEmitOnError": true,
-//    "declaration": true,
+    "declaration": true,
     "noImplicitAny": true,
     "noImplicitReturns": true,
     "strictNullChecks": true,
