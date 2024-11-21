@@ -1,0 +1,23 @@
+{
+  "name": "chap15-usingjs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc-watch --onsuccess \"node ./build/index.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "devDependencies": {
+    "@types/debug": "^4.1.12",
+    "tsc-watch": "^6.2.1",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "debug": "^4.3.7"
+  }
+}
