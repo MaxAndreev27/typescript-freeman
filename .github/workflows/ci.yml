@@ -17,12 +17,17 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
           cache: npm
+          cache-dependency-path: |
+            **/package-lock.json
 
       - name: Install dependencies
         run: |
-          find . -maxdepth 2 -name package.json -execdir npm install \;
+          for d in $(find . -maxdepth 2 -name package.json -printf '%h\n' | sort -u); do
+            echo "Installing dependencies in $d"
+            (cd "$d" && npm install --no-fund --no-audit)
+          done
 
       - name: Run TypeScript build checks
         run: |
